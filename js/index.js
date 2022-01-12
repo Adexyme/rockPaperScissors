@@ -1,3 +1,4 @@
+
 function computerPlay(  ){
 
 const choices = [ "rock","paper","scissors"] ;
@@ -19,50 +20,50 @@ function determineWinner( playerSelection, computerSelection ){
 
        //Draw
 
-       return `Sorry ! That was a draw`;
+       return [`Sorry ! That was a draw`,0];
 
        }
    else if( pSelection === "ROCK" && cSelection === "SCISSORS" ){
 
        //Player won     
 
-       return`You won! ${ pSelection } beats ${ cSelection } `;
+       return [`You won! ${ pSelection } beats ${ cSelection } `,1];
 
       }
    else if( pSelection === "SCISSORS" && cSelection === "PAPER" ){
 
        //Player won   
    
-       return`You won! ${ pSelection } beats ${ cSelection } `;
+       return [`You won! ${ pSelection } beats ${ cSelection } `,1];
 
       }
    else if( pSelection === "PAPER" && cSelection === "ROCK" ){
 
        //Player won
 
-       return`You won ! ${ pSelection } beats ${ cSelection } `;
+       return [`You won ! ${ pSelection } beats ${ cSelection } `,1];
 
       }
    else{
 
        //Computer won
 
-      return `You Lose! ${ cSelection } beats ${ pSelection } `;
+      return [`You Lose! ${ cSelection } beats ${ pSelection } `,0];
 
       }
 
   }
 
-const playerSelection = "rock";
 
-const computerSelection = computerPlay(  );
+function game(  ){
 
-const gameResult = determineWinner( playerSelection, computerSelection );
+let scores = 0;
 
-console.log( gameResult );
+for( cnt = 0 ; cnt < 5 ; cnt++ ){
 
-alert( gameResult);
-lection === null || ( playerSelection.toUpperCase() !== "ROCK" && playerSelection.toUpperCase() !== "PAPER" && playerSelection.toUpperCase() !== "SCISSORS" )){
+const playerSelection = prompt( `Please enter "Rock" or "Paper" or "Scissors" to play.`);
+
+if ( playerSelection === null || ( playerSelection.toUpperCase() !== "ROCK" && playerSelection.toUpperCase() !== "PAPER" && playerSelection.toUpperCase() !== "SCISSORS" )){
 
    console.log("Wrong Input, Game Over");
 
