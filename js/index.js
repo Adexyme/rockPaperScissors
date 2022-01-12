@@ -57,4 +57,8 @@ const playerSelection = "rock";
 
 const computerSelection = computerPlay(  );
 
-console.log(determineWinner( playerSelection, computerSelection ) );
+const gameResult = determineWinner( playerSelection, computerSelection );
+
+console.log( gameResult );
+
+alert( gameResult);
