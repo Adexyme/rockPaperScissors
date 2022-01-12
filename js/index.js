@@ -62,3 +62,37 @@ const gameResult = determineWinner( playerSelection, computerSelection );
 console.log( gameResult );
 
 alert( gameResult);
+lection === null || ( playerSelection.toUpperCase() !== "ROCK" && playerSelection.toUpperCase() !== "PAPER" && playerSelection.toUpperCase() !== "SCISSORS" )){
+
+   console.log("Wrong Input, Game Over");
+
+   alert( "Wrong Input, Game Over");
+
+   return;
+
+  }
+
+const computerSelection = computerPlay(  );
+
+const gameResult = determineWinner( playerSelection, computerSelection );
+
+
+scores = scores + gameResult[1] ;
+
+alert( gameResult[0]);
+
+console.log( gameResult[0] );
+
+
+}
+alert( `You: ${ scores } ----- Computer:${ 5 - scores } `);
+
+console.log( `You: ${ scores } ----- Computer:${ 5 - scores }` );
+
+
+
+ }
+
+
+game();
+
